@@ -66,9 +66,7 @@ const Page1 = () => {
             <div
                 id='page1-in'
                 className='relative shadow-xl p-[6vw] sm:p-[2vw] shadow-gray-700 bg-[] bg-cover bg-center h-full w-full rounded-[20px] sm:rounded-[50px] bg-no-repeat'
-                style={{
-                    backgroundImage: `url(./assets/hit2.jpg)`,
-                }}
+               
             >
                 <nav
                     className={`${styles.paddingX} w-full flex items-center py-3 sm:py-5 top-0 z-20 ${scrolled ? "bg-primary" : "display-none"}`}
