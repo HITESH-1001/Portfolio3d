@@ -22,7 +22,7 @@ const Page1Bottom = () => {
                 <img className='w-[20x] bg-emerald-500' src="./webdev.png" alt="" />
                 <img className='mb-10' src="https://static.wixstatic.com/media/f1c650_ed71078001ef401889b71537cca76dc4~mv2.png/v1/fill/w_101,h_101,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cssda-wotd-white.png" alt="" />
                 {/* <img className='mb-10 w-[101x]' src="/src/assets/spider.gif" alt="" /> */}
-                <img className='w-[101px] h-101 rounded-full bg-white' src="./src/assets/webdev2.png" alt="" />
+                <img className='w-[101px] h-101 rounded-full bg-white' src="./webdev2.png" alt="" />
             </div>
         </div>
     )
