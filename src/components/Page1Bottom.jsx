@@ -36,7 +36,7 @@ const Page1Bottom = () => {
 
             <div id='banner1' className=' p-8  '>
                 <img className='w-[201px] h-101 bg-white rounded-full 
-                ' src="src/assets/webdev2.png" alt="" />
+                ' src="./webdev2.png" alt="" />
             </div>
         </div>
     )
