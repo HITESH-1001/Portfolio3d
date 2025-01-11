@@ -7,7 +7,7 @@ import Page1Bottom from '../components/Page1Bottom'
 import TiltText from '../components/TiltText'
 
 
-import { close, logo, menu } from "../assets"
+import { close, logo1, menu } from "../assets"
 import { navLinks } from "../constants"
 import { styles } from "../styles"
 const Page1 = () => {
@@ -57,19 +57,19 @@ const Page1 = () => {
     }, [xVal, yVal])
 
     return (
-        
+
         <div
             id='page1'
             onMouseMove={(e) => { mouseMoving(e) }}
-            className='relative w-full h-screen p-4 sm:p-7'
+            className='relative w-full h-screen p-4 sm:p-7 '
         >
             <div
                 id='page1-in'
-                className='relative shadow-xl p-[6vw] sm:p-[2vw] shadow-gray-700 bg-[] bg-cover bg-center h-full w-full rounded-[20px] sm:rounded-[50px] bg-no-repeat'
-               
+                className=' relative shadow-xl p-[6vw] sm:p-[2vw] shadow-gray-700 bg-[] bg-cover bg-center h-full w-full rounded-[20px] sm:rounded-[50px] bg-no-repeat'
+
             >
                 <nav
-                    className={`${styles.paddingX} w-full flex items-center py-3 sm:py-5 top-0 z-20 ${scrolled ? "bg-primary" : "display-none"}`}
+                    className={`${styles.paddingX} w-full flex items-center py-3 sm:py-12 top-0 z-20 ${scrolled ? "bg-primary" : "display-none"}`}
                 >
                     <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
                         <Link
@@ -80,7 +80,7 @@ const Page1 = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            <img src={logo} alt='logo' className='w-14 h-14 sm:w-20 sm:h-20 object-contain' />
+                            <img src={logo1} alt='logo' className='w-14 h-14 sm:w-20 sm:h-20 object-contain' />
                             <p className='text-white text-[28px] sm:text-[40px] font-bold cursor-pointer flex'>
                                 Hitesh &nbsp;
                                 <span className='hidden sm:block'>| Portfolio</span>
@@ -129,22 +129,22 @@ const Page1 = () => {
                 </nav>
 
                 <TiltText abc={tiltRef} />
-
-                <div className='absolute bottom-4 sm:bottom-10 w-full flex justify-center items-center'>
-                    <div className='w-[25px] h-[44px] sm:w-[35px] sm:h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 '>
+                {/* 
+                <div className='bg-red-600 absolute bottom-4 sm:bottom-10 w-full flex justify-center items-center  sm:justify-end '>
+                    <div className='bg-green-600 w-[25px] h-[44px] sm:w-[35px] sm:h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 '>
                         <motion.div
                             animate={{
                                 y: [0, 24, 0],
                             }}
                             transition={{
                                 duration: 1.5,
-                                repeat: Infinity,
-                                repeatType: "loop",
+                                // repeat: Infinity,
+                                //repeatType: "loop",
                             }}
                             className='w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white mb-1'
                         />
                     </div>
-                </div>
+                </div> */}
 
                 <Page1Bottom />
             </div>

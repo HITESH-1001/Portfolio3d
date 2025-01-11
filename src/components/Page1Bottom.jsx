@@ -1,4 +1,5 @@
 import { useGSAP } from '@gsap/react';
+import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import React, { useEffect } from 'react';
 
@@ -12,17 +13,30 @@ const Page1Bottom = () => {
         })
     }, []);
     return (
-        <div className='absolute left-0 bottom-0 flex items-end justify-between  w-full   '>
-            <div className='p-2 ml-10 mb-[4vw] '>
-                <h2 className='text-3xl font-[pf5] '> ANIMATED  WEBSITE DESIGN </h2>
-                {/* <h3 className='text-4xl font-[pf-3] text-gray-400'>BESPOKE FREELANCE</h3> */}
+        <div className=' absolute left-0 bottom-0 flex items-end justify-between  w-full   '>
+            {/* <div className='flex items-start p-2 ml-10 mb-[4vw] sm:p-1   '>
+                <h2 className='text-3xl font-[pf5] '>F     ANI MATED DESIGN </h2>
+            </div> */}
+
+            <div className=' p-3 bottom-4 sm:bottom-10 w-full flex justify-center items-center   '>
+                <div className=' w-[25px] h-[44px] sm:w-[35px] sm:h-[64px] rounded-3xl border-4 border-secondary  flex justify-center items-start p-2 '>
+                    <motion.div
+                        animate={{
+                            y: [0, 24, 0],
+                        }}
+                        transition={{
+                            duration: 1.5,
+                            repeat: Infinity,
+                            repeatType: "loop",
+                        }}
+                        className='w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white mb-1'
+                    />
+                </div>
             </div>
-            <div id='banner1' className='p-20  '>
-                <div className='w-[20x] h-[20x] bg-green-200'></div>
-                <img className='w-[20x] bg-emerald-500' src="./webdev.png" alt="" />
-                <img className='mb-10' src="https://static.wixstatic.com/media/f1c650_ed71078001ef401889b71537cca76dc4~mv2.png/v1/fill/w_101,h_101,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cssda-wotd-white.png" alt="" />
-                {/* <img className='mb-10 w-[101x]' src="/src/assets/spider.gif" alt="" /> */}
-                <img className='w-[101px] h-101 rounded-full bg-white' src="./webdev2.png" alt="" />
+
+            <div id='banner1' className=' p-8  '>
+                <img className='w-[201px] h-101 bg-white rounded-full 
+                ' src="src/assets/webdev2.png" alt="" />
             </div>
         </div>
     )
